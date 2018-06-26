@@ -136,4 +136,29 @@ var sellerSchema = new mongoose.Schema({
 	billing_info: [{type: String, number: String, cvid: Number}],
 	for_sale: [{product: Schema.Types.ObjectId, date: Date}],
 	reviews: [Schema.Types.ObjectId]
-})
+});
+
+var orderScheme = new mongoose.Schema({
+	_id: mongoose.Scheme.Types.ObjectId,
+	date: Date,
+	shipping: {
+		customer: String,
+		address: String,
+		city: String,
+		region: String,
+		state: String,
+		country: String,
+		notes: String,	
+		tracking: {
+			company: String,
+			tracking_no: String,
+			status: String,
+			delivery: Date
+		}
+	},
+	payment: {
+		method: String,
+		trans_id: String
+	},
+	products: [{quantity: Number, product: Schema.Types.ObjectId}]
+});
