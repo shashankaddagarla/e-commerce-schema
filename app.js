@@ -121,7 +121,7 @@ var userSchema = new mongoose.Schema({
 	wishlist: [Schema.Types.ObjectId], // product IDs
 	profile: String,
 	reviews: [Schema.Types.ObjectId],
-	shopping_cart: [Schema.Types.ObjectId]
+	shopping_cart: [Schema.Types.ObjectId] // won't grow too large, embedded is quicker and works fine
 	recent_buys: [Schema.Types.ObjectId]
 });
 
