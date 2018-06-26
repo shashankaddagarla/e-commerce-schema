@@ -111,6 +111,7 @@ var inventorySchema = new mongoose.Schema({
 var userSchema = new mongoose.Schema({
 	_id: mongoose.Schema.Types.ObjectId,
 	is_premium: Boolean,
+	is_active: Boolean,
 	name: String,
 	number: Number,
 	billing_address: String,
