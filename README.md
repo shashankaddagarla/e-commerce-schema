@@ -12,3 +12,5 @@ This doesn't really make that much sense, given that one of the salient features
 This code requires that mongoose be installed on your app, which I prefer to be generated via express generator. node.js must also be installed. It also expects a local instance of mongoDB running, called "test"
 
 To install, simply do ```$ npm install -S mongoose```.
+
+You can find a simple schema flowchart in "Untitled Diagram.jpg"
