@@ -9,8 +9,8 @@ Assignment: Create data schemas for an Amazon-like site with data models for use
 
 This doesn't really make that much sense, given that one of the salient features of noSQL databases is that they are schema-free, which is suitable to an Amazon-like site with potentially different schemas for different types of products (for example, a book will have a number of pages attribute, whereas a laptop will not.) Nonetheless, mongoose provides schema-based object modeling for node.js, so I will implement mongoDB "schemas" using mongoose.
 
-This code requires that mongoose be installed on your app, which I prefer to be generated via express generator. node.js must also be installed. It also expects a local instance of mongoDB running, called "test"
+This code requires that mongoose be installed on your app, which I prefer to be generated via express generator. node.js must also be installed. It also expects a local instance of mongoDB running, called "test". (the schema generation does not use this database, to clarify.)
 
 To install, simply do ```$ npm install -S mongoose```.
 
-You can find a simple schema flowchart in "Untitled Diagram.jpg"
+You can find a simple schema flowchart in "Untitled Diagram.jpg".
