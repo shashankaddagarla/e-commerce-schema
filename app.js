@@ -138,7 +138,7 @@ var sellerSchema = new mongoose.Schema({
 	reviews: [Schema.Types.ObjectId]
 });
 
-var orderScheme = new mongoose.Schema({
+var orderSchema = new mongoose.Schema({
 	_id: mongoose.Scheme.Types.ObjectId,
 	date: Date,
 	shipping: {
